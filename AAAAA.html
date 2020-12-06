@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Garo dictionary</title>
+  <!-- AngularJS -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/angular@1.7.3/angular.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.2/dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.2/dist/css/bootstrap.min.css">
+    <style type="text/css">
+  body {
+  font-family: "Lato", sans-serif;
+  background-color:white;
+  overflow-y:hidden;
+  
+  }
+  .sidenav {
+  display: none;
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:black;
+  overflow-x: hidden;
+  padding-top: 60px;
+  }
+  .sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  }
+  .sidenav a:hover {
+  color: #FFFFFF;
+  }
+  .sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px; 
+  font-size: 36px;
+  margin-left: 50px;
+  }
+  @media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  }
+  #searchbar{
+  width:70%;
+  }
+  #list{
+  background:color-black;
+  overflow:scroll;
+  width:100%;
+  height:600px;
+  background-color:white;
+  position:fixed;
+ 
+  }
+  </style>
+  <script>
+  
+  function openNav() {
+  document.getElementById("mySidenav").style.display = "block";
+  }
+  
+  function closeNav() {
+  document.getElementById("mySidenav").style.display = "none";
+  }
+  
+  function search_words() { 
+  
+  let input = document.getElementById('searchbar').value
+  
+  input=input.toLowerCase(); 
+  
+  let x = document.getElementsByClassName('willa'); 
+  
+  
+  
+  for (i = 0; i < x.length; i++) {  
+  
+  if (!x[i].innerHTML.toLowerCase().includes(input)) { 
+  
+  x[i].style.display="none"; 
+  
+  } 
+  
+  else { 
+  
+  x[i].style.display="list-item";                  
+  
+  } 
+  
+  } 
+  } 
+ 
+  
+  </script>
+ </head>
+ <body>
+   <!--sidebar-->
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="AAAAA.html" id="onlink">Home</a>
+  <a href="About.html" id="onlink" >About</a>
+  <a href="Contact.html" id="onlink">Contact</a>
+  <a href="Developer.html" id="onlinl">Developer</a>
+  </div>
+  &nbsp;&nbsp;&nbsp;
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">Dictionary</span>
+  
+  <!--searchbar-->
+  <pre>
+  <input id="searchbar" onkeyup="search_words()" type="text"
+        name="search" placeholder="Search"> 
+       </pre>
+    <!--list-->
+ <ul id="list">
+  
+  <a href="ACCUSATION.html"><li class="willa">ACCUSATION</li></a>
+  <a href="Abet.html"><li class="willa">ABET</li></a>
+  <a href="ACCUSER.html"><li class="willa">ACCUSER</li></a>
+ <a href="ADDRESS.html"><li class ="willa">ADDRESS</li></a>
+ <a href="AFFILIATED.html"><li class ="willa">AFFILIATED</li></a>
+ <a href="AMBIGUOUS.html"><li class ="willa">AMBIGUOUS</li></a>
+ <a href="ANCHOR.html"><li class ="willa">ANCHOR</li></a>
+ <a href="APPARATUS.html"><li class ="willa">APPARATUS</li></a>
+ <a href="APPARENT.html"><li class ="willa">APPARENT</li></a>
+ <a href="APPEAL.html"><li class ="willa">APPEAL</li></a>
+ <a href="APPEAR.html"><li class ="willa">APPEAR</li></a>
+ <a href="APPEND.html"><li class ="willa">APPEND</li></a>
+ <a href="APPRENTICE.html"><li class ="willa">APPRENTICE</li></a>
+ <a href="ARGUMENT.html"><li class ="willa">ARGUMENT</li></a>
+ <a href="APPROPRIATE.html"><li class ="willa">APPROPRIATE</li></a>
+ <a href="AROUSE.html"><li class ="willa">AROUSE</li></a>
+ <a href="ASSAULT.html"><li class ="willa">ASSAULT</li></a>
+ <a href="ASSESSMENT.html"><li class ="willa">ASSESSMENT</li></a>
+ <a href="ASSOCIATE.html"><li class ="willa">ASSOCIATE</li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+ <a href="cakes.html"><li class ="willa"></li></a>
+  
+  
+  
+  
+  
+  
+  
+  
+  </ul>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </html>
+  </DOCTYPE>
+ 
+  
+  
